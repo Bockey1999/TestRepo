@@ -14,6 +14,8 @@ const { t } = useI18n();
 const reviewText = ref('');
 
 function submitReview() {
+  console.log('testing hello')
+  // i dont want commented out code
   if (reviewText.value.trim()) {
     alert(`Review submitted: ${reviewText.value}`);
     reviewText.value = '';
