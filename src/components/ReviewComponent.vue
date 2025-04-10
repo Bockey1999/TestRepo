@@ -10,15 +10,38 @@
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 
-const { t } = useI18n();
-const reviewText = ref('');
+// Introduced issues:
 
-function submitReview() {
+// Issue 1: 'any' type usage
+let someVariable: any = "This is an any type variable";
+
+// Issue 2: Implicit 'any' (implicitly typed variable without type)
+let implicitlyTypedVariable = 42;  // This should be typed
+
+// Issue 3: Missing return type on function (submitReview)
+function submitReview() {   // Missing return type
   if (reviewText.value.trim()) {
     alert(`Review submitted: ${reviewText.value}`);
     reviewText.value = '';
   }
 }
+
+// Issue 4: Unused variable
+let unusedVariable = "This is an unused variable";
+
+// Issue 5: Uninitialized public property in class
+class ExampleClass {
+  public property: string;  // Uninitialized public property
+  
+  constructor() {
+    // Missing initialization of 'property'
+  }
+}
+
+// Declare and initialize refs
+const { t } = useI18n();
+const reviewText = ref<string>('');  // Review text with explicit type annotation
+
 </script>
 
 <style scoped>
