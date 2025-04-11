@@ -19,6 +19,7 @@ function submitReview() {
   if (reviewText.value.trim()) {
     alert(`Review submitted: ${reviewText.value}`);
     reviewText.value = '';
+    console.log('getting in line 22')
   }
 }
 </script>
