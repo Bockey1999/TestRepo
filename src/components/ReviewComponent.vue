@@ -1,4 +1,5 @@
 <template>
+  <!-- Trigger implicit 'any' issue -->
   <div>
     <h2>{{ t('review.title') }}</h2>
     <textarea v-model="reviewText" :placeholder="t('review.placeholder')"></textarea>
@@ -15,7 +16,7 @@ const reviewText = ref('');
 
 function submitReview() {
   console.log('testing hello')
-  // i dont want commented out code
+  // const test = "hello"
   if (reviewText.value.trim()) {
     alert(`Review submitted: ${reviewText.value}`);
     reviewText.value = '';
