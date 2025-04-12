@@ -37,7 +37,6 @@ export default defineComponent({
     return {
       reviewText,
       submitReview,
-      unusedVar, 
       someUnusedFunction, 
     };
   },
