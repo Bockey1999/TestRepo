@@ -7,7 +7,6 @@
     ></textarea>
     <button @click="submitReview">{{ t("review.submit") }}</button>
     <p>{{ unusedVar }}</p>
-    <!-- used in template but not returned from setup -->
   </div>
 </template>
 
