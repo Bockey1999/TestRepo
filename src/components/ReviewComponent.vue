@@ -1,4 +1,5 @@
 <template>
+  <!-- Trigger implicit 'any' issue -->
   <div>
     <h2>{{ t('review.title') }}</h2>
     <textarea v-model="reviewText" :placeholder="t('review.placeholder')"></textarea>
@@ -6,6 +7,7 @@
   </div>
 </template>
 
+<script lang="ts"> 
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 <script lang="ts">
@@ -14,9 +16,12 @@ const { t } = useI18n();
 const reviewText = ref('');
 
 function submitReview() {
+  console.log('testing hello')
+  // const test = "hello"
   if (reviewText.value.trim()) {
     alert(`Review submitted: ${reviewText.value}`);
     reviewText.value = '';
+    console.log('getting in line 22')
   }
 }
 </script>
