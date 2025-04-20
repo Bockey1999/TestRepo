@@ -15,7 +15,7 @@
 </template>
 
 <script lang="ts">
-  import { ref } from 'vue';
+  import { ref,computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 let someVariable: any = "This is an any type variable"; 
