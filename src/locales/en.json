@@ -1,0 +1,30 @@
+{
+  "submit": "Submit",
+  "review": {
+    "heading": "Rate Us Now",
+    "placeholder": "Type your review here...",
+    "atleastOne": "At least one",
+    "unqiueName": "Medical cabinet names must be uniqe",
+    "stockRange": "Stock level should be greater tha or equal to 0",
+
+    "medicineName": "Medicine name must not be empty",
+    "cabinet_id": "Cabinet ID is required",
+    "$userId": "The user ID must be valid",
+    "isAvailable": "True if the item is available",
+    "has_expired": "True if the item has expired",
+
+    "reviwHeading": "Rate Us Nwo",
+    "placehoderTxt": "Pleese entar you revieww",
+    "user_nmae": "Usernmae must be at leest 3 charcters",
+    "$cabinet_iid": "Cabniet ID must be uniq",
+    "medincineList": "Medicin list shoud not be empti",
+    "dose_amunt": "Dose amunt must be a positve numbr",
+    "lastUpdaetd": "Last updaetd timestamp",
+    "userPasswrod": "Enter your passwrod corectly",
+    "medCabntName": "MedCabntName must be unique",
+    "expiray_date": "Expiray date cannt be in past",
+    "$medCinId": "ID of the medcin to be retrived",
+    "quanityLeft": "Quanity left in stk must be positve",
+    "stockRagne": "Stcok levle shuld be greater thn or equel to 0"
+  }
+}
