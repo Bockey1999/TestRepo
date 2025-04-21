@@ -7,6 +7,18 @@
       v-model="reviewText"
       :placeholder="t('review.placeholder')"
     ></textarea>
+
+
+   <textarea
+      v-model="reviewText"
+      placeholder="t('review.placeholder')"
+    ></textarea>
+
+     <textarea
+      v-model="reviewText"
+      label="t('review.placeholder')"
+    ></textarea>
+
     <button @click="submitReview">{{ t("submit") }}</button>
 
     <textarea v-model="reviewText" label="label ssue test" />
