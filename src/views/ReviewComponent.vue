@@ -11,12 +11,12 @@
 
    <textarea
       v-model="reviewText"
-      placeholder="t('review.placeholder')"
+      placeholder="t('review.test')"
     ></textarea>
 
      <textarea
       v-model="reviewText"
-      label="t('review.placeholder')"
+      label="t('review.label')"
     ></textarea>
 
     <button @click="submitReview">{{ t("submit") }}</button>
