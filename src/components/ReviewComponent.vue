@@ -39,6 +39,7 @@ export default defineComponent({
     const someUnusedFunction = () => {};
 
     return {
+      t,
       reviewText,
       submitReview,
       tesing,
